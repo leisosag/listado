@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #374F6C;
+}
+/* TITULO */
+.titulo {
+    height: 80px;
+    background-color: #304863;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+/* CONTENEDORES */
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.columna {
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #304863;
+    border-radius: 20px;
+    /* padding: 20px; */
+}
+/* AGREGAR TAREA */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+input {
+    width: 40%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FA518B;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    align-self: center;
+    font-size: 18px;
+}
+input:hover {
+    background-color: #da4d7e;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+    align-self: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+    font-weight: 400;
+    background-color: #304863;
+}
+/* TAREAS PENDIENTES */
+.columna-pendientes {
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #FA518B;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+#lista-tareas li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.borrar-tarea {
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+.borrar-tarea:hover {
+    color: #da4d7e;
+}
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .columna {
+        width: 80%;
+    }
+    input {
+        width: 60%;
+    }
+}
